@@ -4,7 +4,7 @@ PHP files cache, Simple, Easy and Fast Files Cache
 # How to use ?
 ##### include class
 
-	include('Cache.php');
+	include('Cache/Cache.php');
 
 ##### to set chaced data, use set function to do that, first argument the name of cache data and the second argument the value
 
