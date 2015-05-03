@@ -44,7 +44,7 @@ class Cache{
 	}
 	
 	/* 
-	*  @function to set chaced data
+	*  @function to set cached data
 	*  @return none
 	*/
 	protected function set($name, $value, $time = true){
@@ -59,8 +59,8 @@ class Cache{
 	
 	
 	/* 
-	*  @function to get chased data
-	*  @return cached value by name, array of some cached data or array of all chased data
+	*  @function to get cached data
+	*  @return cached value by name, array of some cached data or array of all cached data
 	*/
 	protected function get($name = null){
 		if(is_string($name)){
@@ -88,7 +88,7 @@ class Cache{
 	
 	
 	/* 
-	*  @function to check in chaced data is set
+	*  @function to check in cached data is set
 	*  @return true if exists
 	*  @return false if not exists
 	*/
@@ -194,7 +194,7 @@ class Cache{
 	*/
 	protected function setContent($name, $value)
 	{
-		json_decode(file_put_contents(__DIR__ .$this->saveFolder.$name.$this->ext,json_encode($value)));
+		file_put_contents(__DIR__ .$this->saveFolder.$name.$this->ext,json_encode($value));
 	}
 	
 	/* 
