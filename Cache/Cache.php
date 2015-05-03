@@ -153,7 +153,7 @@ class Cache{
 	*  @function to build settings file if not exists
 	*  @return none
 	*/
-	protected function bulid(){
+	protected function build(){
 		chmod(__DIR__, 0770);
 		if(!file_exists(__DIR__ . $this->saveFolder))
 		{
@@ -213,7 +213,7 @@ class Cache{
 	protected function getSettings()
 	{
 		if(!file_exists(__DIR__ .$this->settingFile)){
-			$this->bulid();
+			$this->build();
 			return array();
 		}else{
 			return json_decode(file_get_contents(__DIR__ .$this->settingFile), true);
