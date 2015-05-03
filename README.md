@@ -1,5 +1,5 @@
 # phpCache
-PHP files cache, Simple, Easy and Fast Files Cache
+PHP files Cache, Simple, Easy and Fast Files Cache
 
 # How to use ?
 ##### include class
@@ -12,14 +12,14 @@ PHP files cache, Simple, Easy and Fast Files Cache
 	
 	Cache::set('data', ['id'=>100, 'name'=>'ahmed','email'=>'ahmedsaoud31@gmail.com']);
 
-##### to get data from chace use get function
+##### to get data from cache use get function
 
 	$age = Cache::get('age');
 	
 	$data = Cache::get('data');
 
 ##### to cache data with time, use function set with 3 arguments the thread argument is time in minuets
-##### save chace data for one day
+##### save cache data for one day
 
 	Cache::set('age', 100, 24*60);
 	
@@ -52,7 +52,7 @@ PHP files cache, Simple, Easy and Fast Files Cache
 
 	Cache::set('name', 'ahmed');
 
-##### to delete chaced data use function delete
+##### to delete cached data use function delete
 
 	Cache::delete('data');
 
